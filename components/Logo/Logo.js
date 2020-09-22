@@ -21,7 +21,7 @@ function getImage(mode) {
 }
 
 function Logo({
-  label = 'ANT Liquidity Rewards',
+  label = 'NMT Liquidity Rewards',
   onClick = () => {},
   mode = 'normal',
   mini = false,

@@ -19,7 +19,7 @@ export default () => {
       css={`
         position: relative;
         min-height: 100vh;
-        background: #f6f9fc;
+        background: #f6f6fc;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -75,7 +75,7 @@ export default () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://aragon.org/"
+              href="https://nova.org/"
             >
               About
             </a>
@@ -84,16 +84,16 @@ export default () => {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://aragon.org/token/ant"
+              href="https://nova.org/token/ant"
             >
-              ANT
+              NMT
             </a>
           </li>
           <li>
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://wiki.aragon.org/"
+              href="https://wiki.nova.org/"
             >
               Wiki
             </a>
@@ -104,7 +104,7 @@ export default () => {
             ${isCompact && 'margin-top: 8px;'}
           `}
         >
-          Powered By <img src={logoAnt} alt="ANT Logo" width="30" />
+          Powered By <img src={logoAnt} alt="NMT Logo" width="30" />
         </div>
       </div>
     </div>

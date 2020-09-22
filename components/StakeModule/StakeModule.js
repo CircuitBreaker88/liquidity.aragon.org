@@ -90,7 +90,7 @@ function useConvertInputs() {
 }
 
 export default function StakeModule() {
-  const [activeKey, setActiveKey] = useState(0)
+  const [activeKey, setActiveKey] = useState(1)
   const [disabled, setDisabled] = useState(false)
 
   const {
@@ -167,7 +167,7 @@ export default function StakeModule() {
   return (
     <div
       css={`
-        margin-top: 96px;
+        margin-top: 144px;
       `}
     >
       <main
@@ -180,7 +180,7 @@ export default function StakeModule() {
           max-width: 762px;
           background: #ffffff;
           mix-blend-mode: normal;
-          box-shadow: 0px 2px 2px rgba(87, 95, 119, 0.15);
+          box-shadow: 0px 2px 2px rgba(95, 87, 119, 0.15);
           border-radius: 6px;
           padding: 32px;
           ${isCompact &&
@@ -194,7 +194,6 @@ export default function StakeModule() {
       >
         <ButtonGroup
           activeKey={activeKey}
-          disabled={disabled}
           elements={SECTIONS}
           isCompact={isCompact}
           onSetActiveKey={setActiveKey}
@@ -205,7 +204,7 @@ export default function StakeModule() {
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://aragon.org/blog/liquidity-rewards"
+              href="https://nova.org/blog/liquidity-rewards"
             >
               {' '}
               Learn how to obtain UNI to participate in the rewards program
@@ -215,7 +214,7 @@ export default function StakeModule() {
         )}
         {SECTIONS[activeKey].id === 'withdraw' && (
           <Info mode="info" padding="16" Compact={isCompact}>
-            Withdraw all of your staked UNI.
+            Withdraw all of your staked UNI and claim any pending rewards.
           </Info>
         )}
         {SECTIONS[activeKey].id === 'claim' && (
@@ -270,7 +269,7 @@ export default function StakeModule() {
               ${disabled ||
                 (inputError &&
                   `
-                background: #F6F9FC;
+                background: #f6f6fc;
                 color: #8398AC;
                 cursor: default;
                 &:active {
@@ -389,7 +388,7 @@ function WithdrawSection({ loading, isCompact, staked }) {
 function ClaimSection() {
   const { account } = useWalletAugmented()
   const { loading, paid } = useRewardsPaid(account)
-  const [loadingUniswapInfo, uniswapInfo] = useTokenUniswapInfo('ANT')
+  const [loadingUniswapInfo, uniswapInfo] = useTokenUniswapInfo('NMT')
 
   return (
     <div>
@@ -416,7 +415,7 @@ function ClaimSection() {
               margin-bottom: 12px;
             `}
           >
-            Total ANT in the Uniswap liquidity pool
+            Total NMT in the Uniswap liquidity pool
           </span>
           <span
             css={`
@@ -470,7 +469,7 @@ function ClaimSection() {
             >
               {loading
                 ? 'loading...'
-                : TokenAmount.format(paid, 18, { symbol: 'ANT' })}
+                : TokenAmount.format(paid, 18, { symbol: 'NMT' })}
             </span>
           </span>
         </div>
@@ -483,7 +482,7 @@ const Card = styled.div`
   width: 100%;
   height: 120px;
   background: #ffffff;
-  box-shadow: 0px 7px 17px rgba(139, 166, 194, 0.15);
+  box-shadow: 0px 7px 17px rgba(140, 139, 194, 0.15);
   border-radius: 8px;
   padding: 32px;
 `
@@ -499,9 +498,9 @@ const ActionButton = styled.button`
   &:active {
     top: 1px;
   }
-  background: linear-gradient(342.22deg, #01e8f7 -5.08%, #00c2ff 81.4%);
+  background: linear-gradient(342.22deg, #875fcc -5.08%, #673AB7 81.4%);
   color: white;
   mix-blend-mode: normal;
-  box-shadow: 0px 2px 2px rgba(87, 95, 119, 0.15);
+  box-shadow: 0px 2px 2px rgba(95, 87, 119, 0.15);
   border-radius: 6px;
 `

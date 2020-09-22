@@ -1,1 +1,1 @@
-# Aragon ANT Liquidity Rewards frontend
+# Nova Mining Token NMT Liquidity Rewards frontend

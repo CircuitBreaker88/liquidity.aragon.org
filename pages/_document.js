@@ -8,7 +8,7 @@ const ANALYTICS_CODE = `
   Countly.q = Countly.q || [];
   //provide countly initialization parameters
   Countly.app_key = 'ddabbc3c7ccc61575c7014e8b5d481561c7ee770';
-  Countly.url = 'https://analytics.aragon.org/';
+  Countly.url = 'https://analytics.nova.org/';
   Countly.inactivity_time = 10;
   Countly.q.push(['track_sessions']);
   Countly.q.push(['track_pageview']);
@@ -17,7 +17,7 @@ const ANALYTICS_CODE = `
   (function() {
     var cly = document.createElement('script'); cly.type = 'text/javascript';
     cly.async = true;
-    cly.src = 'https://analytics.aragon.org/sdk/web/countly.min.js';
+    cly.src = 'https://analytics.nova.org/sdk/web/countly.min.js';
     cly.onload = function(){Countly.init()};
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
   })();
@@ -70,7 +70,7 @@ export default class Document extends NextDocument {
           />
 
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:site" content="@AragonProject" />
+          <meta name="twitter:site" content="@Nova Mining TokenProject" />
           <meta name="twitter:description" content={env('SITE_DESCRIPTION')} />
           <meta name="twitter:title" content={env('SITE_TITLE')} />
           <meta name="twitter:image" content="/twitter-card-icon.png" />
@@ -92,8 +92,8 @@ export default class Document extends NextDocument {
             html, body {
             min-height: 100vh;
             background: no-repeat center/170px url(/splash_1.svg),
-                linear-gradient(289.78deg, #01E8F7 18.35%, #00C2FF 80.68%); !important
-            mix-blend-mode: multiply;
+            linear-gradient(289.78deg, #875fcc 18.35%, #673AB7 80.68%); !important
+s            mix-blend-mode: multiply;
             overflow: auto;
             }
           `}</style>

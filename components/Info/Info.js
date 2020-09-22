@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MODES = new Map([
-  ['info', 'rgba(0, 194, 255, 0.1)'],
+  ['info', 'rgba(103, 58, 183, 0.1)'],
   ['warning', 'rgba(247, 149, 1, 0.06)'],
 ])
 

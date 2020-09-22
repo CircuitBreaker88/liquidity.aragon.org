@@ -63,10 +63,10 @@ function Input({
             height: 69px;
             padding: 6px 12px 0;
             background: #ffffff;
-            border: 1px solid #dde4e9;
-            color: #212b36;
+            border: 1px solid #dddee9;
+            color: #222136;
             box-sizing: border-box;
-            box-shadow: inset 0px 4px 8px rgba(139, 166, 194, 0.35);
+            box-shadow: inset 0px 4px 8px rgba(140, 139, 194, 0.35);
             border-radius: 8px;
             appearance: none;
             font-size: 20px;
@@ -78,10 +78,10 @@ function Input({
             -moz-appearance: textfield;
             &:focus {
               outline: none;
-              border-color: #08bee5;
+              border-color: #6431c0;
             }
             &::placeholder {
-              color: #8fa4b5;
+              color: #8f91b5;
               opacity: 1;
             }
             &:invalid {
@@ -120,7 +120,7 @@ const DropdownButton = React.forwardRef(function DropdownButton(
         height: 69px;
         width: 150px;
         padding: 0 0 0 10px;
-        color: #212b36;
+        color: #222136;
         background: transparent;
         border-width: 0;
         border-radius: 0 4px 4px 0;

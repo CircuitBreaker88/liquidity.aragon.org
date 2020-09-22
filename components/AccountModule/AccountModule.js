@@ -47,9 +47,9 @@ function DisconnectedMode() {
         position: relative;
         width: 164px;
         height: 48px;
-        background: linear-gradient(306.16deg, #01e8f7 -5.08%, #00c2ff 81.4%);
+        background: linear-gradient(306.16deg, #875fcc -5.08%, #673AB7 81.4%);
         mix-blend-mode: normal;
-        box-shadow: 0px 2px 2px rgba(87, 95, 119, 0.15);
+        box-shadow: 0px 2px 2px rgba(95, 87, 119, 0.15);
         border-radius: 6px;
         margin-left: 0;
         color: white;
@@ -74,7 +74,7 @@ function DisconnectedMode() {
                 position: relative;
                 width: 100%;
                 height: 40px;
-                border-bottom: 0.5px solid #dde4e8;
+                border-bottom: 0.5px solid #dddfe8;
                 color: #7893ae;
               `}
             >
@@ -159,7 +159,7 @@ function ProviderButton({ name, onActivate, image }) {
         width: 100%;
         height: 90px;
         margin-bottom: 12px;
-        box-shadow: 0px 5px 12px rgba(139, 166, 194, 0.35);
+        box-shadow: 0px 5px 12px rgba(140, 139, 194, 0.35);
         border-radius: 8px;
         text-transform: capitalize;
         &:active {
@@ -230,7 +230,7 @@ const Container = styled.div`
 const StyledPopover = styled(Popover)`
   overflow: hidden;
   background: #fff;
-  box-shadow: 0px 7px 17px rgba(139, 166, 194, 0.35);
+  box-shadow: 0px 7px 17px rgba(140, 139, 194, 0.35);
   border: 0 solid transparent;
   border-radius: 8px;
   width: 410px;
@@ -239,14 +239,14 @@ const StyledPopover = styled(Popover)`
   right: 100px;
 
   &.bs-popover-bottom .arrow::after {
-    border-bottom-color: #f9fafc;
+    border-bottom-color: #faf9fc;
   }
   &.bs-popover-bottom .arrow::before {
     border-bottom-color: transparent;
   }
 
   div.header {
-    background: #f9fafc;
+    background: #faf9fc;
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
@@ -265,10 +265,10 @@ const StyledPopover = styled(Popover)`
       background: transparent;
       border: 0;
       cursor: pointer;
-      color: #637381;
+      color: #636481;
     }
     button:hover {
-      color: #212b36;
+      color: #222136;
     }
   }
   span {

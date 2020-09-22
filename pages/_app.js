@@ -11,7 +11,7 @@ if (env('SENTRY_DSN')) {
   Sentry.init({
     dsn: env('SENTRY_DSN'),
     environment: env('NODE_ENV'),
-    release: 'liquidity.aragon.org@' + env('BUILD'),
+    release: 'liquidity.nova.org@' + env('BUILD'),
   })
 }
 
@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
     <ViewportProvider>
       <animated.div style={revealProps}>
         <NextHead>
-          <title>Aragon Liquidity Program</title>
+          <title>Nova Mining Token Liquidity Program</title>
         </NextHead>
         <GlobalStyles />
         <WalletProvider>

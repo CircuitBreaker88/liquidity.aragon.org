@@ -72,7 +72,7 @@
   {
     "constant": true,
     "inputs": [],
-    "name": "ANT",
+    "name": "NMT",
     "outputs": [
       { "internalType": "contract IERC20", "name": "", "type": "address" }
     ],
