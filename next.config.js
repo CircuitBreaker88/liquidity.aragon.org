@@ -31,6 +31,7 @@ module.exports = withCSS(
       devIndicators: {
         autoPrerender: false,
       },
+        distDir: 'build',
     })
   )
 )
