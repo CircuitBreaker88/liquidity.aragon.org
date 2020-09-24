@@ -200,16 +200,8 @@ export default function StakeModule() {
         />
 
         {SECTIONS[activeKey].id === 'stake' && (
-          <Info mode="info" height="40" padding="16" Compact={isCompact}>
-            <a
-              rel="noopener noreferrer"
-              target="_blank"
-              href="https://nova.org/blog/liquidity-rewards"
-            >
-              {' '}
-              Learn how to obtain UNI to participate in the rewards program
-            </a>
-            .
+          <Info mode="info" padding="16" Compact={isCompact}>
+            Stake your UNI and gain NMT rewards!.
           </Info>
         )}
         {SECTIONS[activeKey].id === 'withdraw' && (

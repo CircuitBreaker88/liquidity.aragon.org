@@ -20,6 +20,15 @@ npm-debug.log*
 # Next
 .next/
 
+#Build
+/build
+
+#DS_Store
+.DS_Store
+
+#out
+/out
+
 # Yarn
 .yarn/cache/
 .yarn/unplugged/
@@ -27,3 +36,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .vercel
+# Local Netlify folder
+.netlify

@@ -17,7 +17,8 @@
     "start": "next dev -p 8080",
     "start:mainnet": "CHAIN_ID=1 npm start",
     "start:rinkeby": "CHAIN_ID=4 npm start",
-    "test": "jest"
+    "test": "jest",
+    "export": "next export"
   },
   "dependencies": {
     "@sentry/browser": "^5.11.1",
